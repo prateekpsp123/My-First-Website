@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@500&family=Oleo+Script+Swash+Caps&family=Radio+Canada:wght@500&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    
+}
+html body
+{
+    margin: 0;
+    padding: 0;
+   overflow-x: hidden;
+   
+    
+}
+.upper{
+    height: 30px;
+    width: 100%;
+
+}
+.upper h3{
+    color: rgb(0, 0, 0,0.7);
+    float: right;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+
+
+nav{ 
+    z-index: 100;
+    padding: 0;
+    margin: 0;
+    background-color:  #ffffff;
+    width: 100%;
+    height: 80px;
+    list-style: none;
+   
+      
+}
+nav ul{
+    float: right;
+    padding: 0px;
+    
+}
+
+
+nav ul li{
+    
+    position: relative;
+    bottom: 120px;
+    right: 50px;
+    color: rgb(19, 18, 18,0.7);
+    font-weight: bold;
+    font-size: 0.9em;
+    display: inline-block;
+    margin-right: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+
+nav label.logo img{
+    margin-bottom: 80px;
+    margin-left: 200px;
+    
+}
+nav ul li:hover{
+    cursor: pointer;
+    color: rgb(54, 54, 230);
+}
+
+
+nav ul ul{
+    position: absolute;
+    top: 30px;
+    background-color: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    box-shadow: 1px 1px 9px 0 hsl(0deg 0% 50% / 40%);
+    
+}
+nav ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+nav ul ul li{
+    position: relative;
+    bottom: 50px;
+    margin-left: 70px;
+    width: 100px;
+    margin-top: 60px;
+    float: none;
+    padding: 0px 0px;
+    list-style: none;
+}
+.image{
+    position: relative;
+    bottom: 70px;
+    width: 100%;
+    height: 200px;
+   
+}
+.image img{
+    width: 100%;
+    opacity: 0.9;
+    
+}
+.icons{
+    position: absolute;
+    bottom: -480px;
+    left: 600px;
+}
+.icons i{
+    margin-top: 30px;
+}
+
+.number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  
+}
+
+
+.services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service1,.service2,.service3,.service4{
+    height: 1200px;
+    
+    width: 200px;
+    margin-top: 80px;
+    margin: 30px 30px;
+}
+
+.service1 li{
+    opacity:0.98;
+    padding: 10px;
+}
+.service2 li{
+    opacity:0.98;
+    padding: 10px;
+}
+.service3 li{
+    opacity:0.98;
+    padding: 10px;
+}
+.service4 li{
+    opacity:0.98;
+    padding: 10px;
+}
+.services h2{
+    font-size: 1.3em;
+    padding: 20px;
+}
+.logo1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo4{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.counter{
+    width: 80%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter1,.counter2,.counter3
+{
+    height: 200px;
+    width: 200px;
+    margin: 80px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+span{
+    padding: 10px;
+}
+
+.num{
+    font-size: 5em;
+    font-weight: bold;
+    color: rgb(36, 20, 94);
+
+}
+.text{
+    color: rgb(36, 20, 94);
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media (max-width:500px){
+    html body{overflow-x: hidden;}
+    .services{
+        display: flex;
+        flex-direction: column;
+    }
+    .counter{
+        display: flex;
+        flex-direction: column;
+        margin-top: 500px;
+        
+    }
+    .Counter{
+        margin-bottom: 2000px;
+        margin-top: 0;
+    }
+    .service1,.service2,.service3,.service4{
+        margin: 10px;
+    }
+    .stat{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .upper{
+        display: none;
+    }
+    .counter1,.counter2,.counter3{
+        margin: 20px;
+       
+    
+    }
+    .icons{
+        display:none;
+    }
+    .Service{
+        position: relative;
+        bottom: 600px;
+    }
+
+}
